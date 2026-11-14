@@ -1,0 +1,40 @@
+{
+  "split": "test",
+  "n_sentences": 2590,
+  "overall": {
+    "precision": 0.2454,
+    "recall": 0.4063,
+    "f1": 0.306
+  },
+  "relaxed": {
+    "precision": 0.4162,
+    "recall": 0.6891,
+    "f1": 0.519
+  },
+  "per_label": {
+    "S": {
+      "precision": 0.2067,
+      "recall": 0.3765,
+      "f1": 0.2669
+    },
+    "K": {
+      "precision": 0.2292,
+      "recall": 0.4189,
+      "f1": 0.2963
+    },
+    "T": {
+      "precision": 0.5116,
+      "recall": 0.4773,
+      "f1": 0.4939
+    },
+    "L": {
+      "precision": 0.5,
+      "recall": 0.3235,
+      "f1": 0.3929
+    }
+  },
+  "tp": 2182,
+  "n_pred": 8892,
+  "n_gold": 5371,
+  "model": "/Users/rescuerz/Desktop/zju_courses/知识图谱导论/jobskill-kg/models/jobskill-ner"
+}

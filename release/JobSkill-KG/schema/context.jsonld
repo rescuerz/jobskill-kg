@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "cns": "http://data.openkg.cn/dataset/jobskill-kg#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "title": "https://schema.org/title",
+    "hiringOrganization": {
+      "@id": "https://schema.org/hiringOrganization",
+      "@type": "@id"
+    },
+    "jobLocation": {
+      "@id": "https://schema.org/jobLocation",
+      "@type": "@id"
+    },
+    "datePosted": {
+      "@id": "https://schema.org/datePosted",
+      "@type": "xsd:date"
+    },
+    "requiresSkill": {
+      "@id": "cns:requiresSkill",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "belongsToFamily": {
+      "@id": "cns:belongsToFamily",
+      "@type": "@id"
+    },
+    "hasSalaryRange": {
+      "@id": "cns:hasSalaryRange",
+      "@type": "@id"
+    },
+    "monthlyMin": {
+      "@id": "cns:monthlyMin",
+      "@type": "xsd:decimal"
+    },
+    "monthlyMax": {
+      "@id": "cns:monthlyMax",
+      "@type": "xsd:decimal"
+    },
+    "salaryMonths": {
+      "@id": "cns:salaryMonths",
+      "@type": "xsd:integer"
+    },
+    "proficiency": "cns:proficiency",
+    "necessity": "cns:necessity",
+    "skillType": "cns:skillType",
+    "escoCode": "cns:escoCode",
+    "educationLevel": "cns:educationLevel",
+    "experienceYears": "cns:experienceYears",
+    "name": "https://schema.org/name",
+    "addressLocality": "https://schema.org/addressLocality",
+    "Skill": "cns:Skill",
+    "SkillCategory": "cns:SkillCategory",
+    "JobFamily": "cns:JobFamily",
+    "SalaryRange": "cns:SalaryRange"
+  }
+}

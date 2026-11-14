@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "clean copy of public release",
+  "files_verified": 60,
+  "tests": 4,
+  "cached_methods": [
+    "dictionary_v2",
+    "bert"
+  ],
+  "evidence_query_matches": 3,
+  "private_raw_fields_present": false,
+  "remote_publication": "not performed; user will publish",
+  "test_directory": "/var/folders/g3/sfzmc2jj4s71lrb5c_hhz3dw0000gn/T/jobskill-release-check-pz_8tpyn/JobSkill-KG"
+}

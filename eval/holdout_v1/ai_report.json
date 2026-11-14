@@ -1,0 +1,127 @@
+{
+  "status": "ai_self_reviewed",
+  "n": 100,
+  "methods": {
+    "dictionary_v2": {
+      "exact": {
+        "tp": 70,
+        "predicted": 106,
+        "gold": 349,
+        "precision": 0.660377358490566,
+        "recall": 0.20057306590257878,
+        "f1": 0.3076923076923077
+      },
+      "overlap_same_label": {
+        "tp": 86,
+        "predicted": 106,
+        "gold": 349,
+        "precision": 0.8113207547169812,
+        "recall": 0.24641833810888253,
+        "f1": 0.378021978021978
+      },
+      "per_label": {
+        "K": {
+          "tp": 53,
+          "predicted": 67,
+          "gold": 190,
+          "precision": 0.7910447761194029,
+          "recall": 0.2789473684210526,
+          "f1": 0.41245136186770426
+        },
+        "S": {
+          "tp": 10,
+          "predicted": 30,
+          "gold": 98,
+          "precision": 0.3333333333333333,
+          "recall": 0.10204081632653061,
+          "f1": 0.15625
+        },
+        "T": {
+          "tp": 7,
+          "predicted": 8,
+          "gold": 60,
+          "precision": 0.875,
+          "recall": 0.11666666666666667,
+          "f1": 0.20588235294117646
+        },
+        "L": {
+          "tp": 0,
+          "predicted": 1,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "modifier_accuracy_on_exact_matches": {
+        "necessity": 0.9,
+        "proficiency": 0.9
+      },
+      "modifier_matched_denominator": 70
+    },
+    "bert": {
+      "exact": {
+        "tp": 109,
+        "predicted": 918,
+        "gold": 349,
+        "precision": 0.1187363834422658,
+        "recall": 0.3123209169054441,
+        "f1": 0.17205998421468036
+      },
+      "overlap_same_label": {
+        "tp": 219,
+        "predicted": 918,
+        "gold": 349,
+        "precision": 0.238562091503268,
+        "recall": 0.6275071633237822,
+        "f1": 0.345698500394633
+      },
+      "per_label": {
+        "K": {
+          "tp": 47,
+          "predicted": 342,
+          "gold": 190,
+          "precision": 0.13742690058479531,
+          "recall": 0.24736842105263157,
+          "f1": 0.17669172932330826
+        },
+        "S": {
+          "tp": 30,
+          "predicted": 507,
+          "gold": 98,
+          "precision": 0.05917159763313609,
+          "recall": 0.30612244897959184,
+          "f1": 0.09917355371900827
+        },
+        "T": {
+          "tp": 31,
+          "predicted": 68,
+          "gold": 60,
+          "precision": 0.45588235294117646,
+          "recall": 0.5166666666666667,
+          "f1": 0.484375
+        },
+        "L": {
+          "tp": 1,
+          "predicted": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "modifier_accuracy_on_exact_matches": {
+        "necessity": null,
+        "proficiency": null
+      },
+      "modifier_matched_denominator": 0,
+      "configuration": {
+        "max_length": 128,
+        "truncated_sentences": 0,
+        "model_sha256": "a75db23a3a7ec9d5532f3e00a673d57f0d2e92cda40ea515d4bf88a3cb9ad246"
+      }
+    }
+  },
+  "scope": "balanced families; same-agent AI annotation/self-review is not independent human gold; modifiers conditional on exact span matches",
+  "annotations_sha256": "46908a5b2fa400967089abbb485d0aafef083dbd227bbf16cf88e8eec36a71da"
+}

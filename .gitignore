@@ -1,0 +1,8 @@
+.pkgs/
+models/
+data/raw/
+logs_train*.txt
+.dsh-vision-toolkit/
+__pycache__/
+*.pyc
+.chrome-tmp/

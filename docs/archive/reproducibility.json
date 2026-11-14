@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-11-01",
+  "method": "干净副本重跑 prepare→extract→build_kg→build_site→package，逐文件比对 SHA256",
+  "identical": [
+    "data/kg/nodes.csv",
+    "data/kg/edges.csv",
+    "data/kg/stats.json",
+    "app/site/index.html",
+    "deliverable/sample.jsonld",
+    "deliverable/README.md"
+  ],
+  "found_and_fixed": "deliverable/README.md 曾残留旧词表条数（412），重跑后与源一致"
+}

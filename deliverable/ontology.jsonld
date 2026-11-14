@@ -1,0 +1,518 @@
+{
+  "@context": {
+    "brick": "https://brickschema.org/schema/Brick#",
+    "cns": "http://data.openkg.cn/dataset/jobskill-kg#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "cns:skillType",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "取值 K（知识）/ S（技能）/ T（通用能力）/ L（语言能力），对齐 ESCO LSKT 四维。"
+      },
+      "rdfs:domain": {
+        "@id": "cns:Skill"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "技能类型"
+        },
+        {
+          "@language": "en",
+          "@value": "skill type"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:SalaryRange",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "招聘文本中的薪资是区间加薪数（如 15-25K·14薪），单一 sc:value 无法表达，故以区间对象建模。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "薪酬区间"
+        },
+        {
+          "@language": "en",
+          "@value": "Salary Range"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "sc:MonetaryAmount"
+      }
+    },
+    {
+      "@id": "cns:proficiency",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "取值：了解 / 熟悉 / 精通；原文未提及时为 未说明。"
+      },
+      "rdfs:domain": {
+        "@id": "cns:JobRequirement"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "掌握程度"
+        },
+        {
+          "@language": "en",
+          "@value": "proficiency"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:forSkill",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "cns:JobRequirement"
+      },
+      "rdfs:label": {
+        "@language": "zh",
+        "@value": "对应技能"
+      },
+      "rdfs:range": {
+        "@id": "cns:Skill"
+      }
+    },
+    {
+      "@id": "cns:requiresSkill",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "岗位要求的技能。不使用 schema:skills 是因为本关系需要携带等级与必要性修饰。"
+      },
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "要求技能"
+        },
+        {
+          "@language": "en",
+          "@value": "requires skill"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "cns:Skill"
+      }
+    },
+    {
+      "@id": "cns:monthlyMax",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cns:SalaryRange"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "月薪上限（千元）"
+        },
+        {
+          "@language": "en",
+          "@value": "monthly max (k CNY)"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:decimal"
+      }
+    },
+    {
+      "@id": "cns:evidence",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cns:JobRequirement"
+      },
+      "rdfs:label": {
+        "@language": "zh",
+        "@value": "抽取溯源记录（JSON）"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:educationLevel",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "取值：不限 / 大专 / 本科 / 硕士 / 博士。"
+      },
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "学历要求"
+        },
+        {
+          "@language": "en",
+          "@value": "education level"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:hasSalaryRange",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "薪酬区间"
+        },
+        {
+          "@language": "en",
+          "@value": "has salary range"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "cns:SalaryRange"
+      }
+    },
+    {
+      "@id": "cns:experienceYears",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "取值：不限 / 应届 / 1-3年 / 3-5年 / 5-10年 / 10年以上。"
+      },
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "经验要求"
+        },
+        {
+          "@language": "en",
+          "@value": "experience requirement"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:Skill",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "可从招聘文本中抽取的能力单元，按 ESCO 的 LSKT 四维区分类型：K=知识、S=技能、T=通用能力、L=语言能力。schema.org 只有 knowsAbout 属性，无法承载技能的类型、等级与必要性，故独立成类。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "技能"
+        },
+        {
+          "@language": "en",
+          "@value": "Skill"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "sc:Thing"
+      }
+    },
+    {
+      "@id": "sc:JobPosting",
+      "@type": "owl:Class",
+      "rdfs:seeAlso": [
+        {
+          "@id": "cns:requiresSkill"
+        },
+        {
+          "@id": "cns:belongsToFamily"
+        },
+        {
+          "@id": "cns:hasSalaryRange"
+        },
+        {
+          "@id": "cns:educationLevel"
+        },
+        {
+          "@id": "cns:experienceYears"
+        }
+      ]
+    },
+    {
+      "@id": "cns:hasRequirement",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": {
+        "@language": "zh",
+        "@value": "岗位技能要求"
+      },
+      "rdfs:range": {
+        "@id": "cns:JobRequirement"
+      }
+    },
+    {
+      "@id": "cns:SkillCategory",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "技能的分类树节点，例如 编程语言 / 深度学习框架 / 数据库 / 云原生工具 / 证书。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "技能分类"
+        },
+        {
+          "@language": "en",
+          "@value": "Skill Category"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "sc:Thing"
+      }
+    },
+    {
+      "@id": "cns:necessity",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "取值：必备 / 加分 / 未说明 / 冲突。"
+      },
+      "rdfs:domain": {
+        "@id": "cns:JobRequirement"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "必要性"
+        },
+        {
+          "@language": "en",
+          "@value": "necessity"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:inCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "cns:Skill"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "所属技能分类"
+        },
+        {
+          "@language": "en",
+          "@value": "in category"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "cns:SkillCategory"
+      }
+    },
+    {
+      "@id": "cns:JobRequirement",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "把学历、经验年限、专业、证书等硬性条件组织为可复用的要求节点，便于跨岗位比较。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "任职要求"
+        },
+        {
+          "@language": "en",
+          "@value": "Job Requirement"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "sc:Thing"
+      }
+    },
+    {
+      "@id": "cns:belongsToFamily",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "sc:JobPosting"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "所属岗位族"
+        },
+        {
+          "@language": "en",
+          "@value": "belongs to family"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "cns:JobFamily"
+      }
+    },
+    {
+      "@id": "cns:escoCode",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "与 ESCO 技能概念对齐后的编号，用于跨标准互操作（可选）。"
+      },
+      "rdfs:domain": {
+        "@id": "cns:Skill"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "ESCO 概念编号"
+        },
+        {
+          "@language": "en",
+          "@value": "ESCO concept code"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "cns:salaryMonths",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "如 13 薪、14 薪；未注明时缺省 12。"
+      },
+      "rdfs:domain": {
+        "@id": "cns:SalaryRange"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "年薪月数"
+        },
+        {
+          "@language": "en",
+          "@value": "salary months per year"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "cns:JobFamily",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "岗位的族级归类，如 算法 / 数据 / 后端 / 前端客户端 / 测试 / 运维安全 / MLOps。schema:Occupation 粒度偏粗，且不便于按族做统计。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "岗位族"
+        },
+        {
+          "@language": "en",
+          "@value": "Job Family"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "sc:Thing"
+      }
+    },
+    {
+      "@id": "http://data.openkg.cn/dataset/jobskill-kg",
+      "@type": "owl:Ontology",
+      "dcterms:created": {
+        "@type": "xsd:date",
+        "@value": "2026-11-01"
+      },
+      "owl:versionInfo": "0.2.0",
+      "rdfs:comment": {
+        "@language": "zh",
+        "@value": "在 cnSchema（schema.org v13 中文版）基础上扩展的招聘领域本体：复用 JobPosting/Occupation/MonetaryAmount 等核心类，新增技能、岗位族、薪酬区间等类与属性。"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "JobSkill-KG 中文 IT/算法岗位—技能知识图谱本体"
+        },
+        {
+          "@language": "en",
+          "@value": "JobSkill-KG Ontology"
+        }
+      ]
+    },
+    {
+      "@id": "cns:monthlyMin",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:domain": {
+        "@id": "cns:SalaryRange"
+      },
+      "rdfs:label": [
+        {
+          "@language": "zh",
+          "@value": "月薪下限（千元）"
+        },
+        {
+          "@language": "en",
+          "@value": "monthly min (k CNY)"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "xsd:decimal"
+      }
+    }
+  ]
+}

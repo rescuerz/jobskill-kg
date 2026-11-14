@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "JobSkill-KG: 中文 IT/算法岗位—技能知识图谱"
+message: "如果使用本数据集，请引用以下条目。"
+type: dataset
+version: 0.1.0
+date-released: "2026-11-01"
+license: CC-BY-4.0
+keywords:
+  - knowledge graph
+  - job posting
+  - skill extraction
+  - cnSchema
+  - ESCO
+abstract: >-
+  面向开放域中文招聘文本构建的岗位—技能知识图谱，覆盖算法、后端、前端客户端、
+  运维安全、数据、测试、MLOps 七个岗位族，包含 4,863 个岗位、344 项技能、
+  12 个技能分类、64,191 条三元组；在 cnSchema 基础上扩展 13 个类与属性。
+authors:
+  - name: "JobSkill-KG 课程设计小组"
+    affiliation: "浙江大学《知识图谱导论》"

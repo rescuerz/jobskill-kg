@@ -1,0 +1,68 @@
+{
+  "name": "jobskill-kg",
+  "title": "中文 IT/算法岗位—技能知识图谱（JobSkill-KG）",
+  "notes": "面向开放域中文招聘文本构建的岗位—技能知识图谱，覆盖算法、后端、前端客户端、运维安全、数据、测试、\nMLOps 七个岗位族，数据来自企业官方招聘站公开岗位（字节跳动 3,576 / 网易 529 / 腾讯 799）。\n\n岗位 4,904 个｜技能 390 项｜分类 12 个｜关系边 169,490 条；RDF 三元组 450,983 条｜平均 10.43 技能/岗。\n\n## 构建方法\n\n1. 数据：公开渠道采集，保留来源 URL 与抓取时间；原始 JD 不分发。\n2. 抽取：410 条人工技术词表做字符级最长匹配（100 句 AI 标注参考集 exact F1=0.308，未经真人复核）；另在 Chinese-SkillSpan\n   上微调中文 BERT 作为对照实验（同一 100 句参考集 exact F1 0.172），最终图谱以词表结果为主。\n3. Schema：复用 cnSchema 的 JobPosting / Organization / Place / MonetaryAmount，扩展 21 个词\n   （5 类 + 16 属性）；技能类型对齐 ESCO 的 LSKT 四维。\n\n## 文件说明\n\n`sample.jsonld` 样例｜`full.jsonld` 全量｜`ontology.ttl` / `ontology.jsonld` 本体｜\n`context.jsonld` 上下文｜`nodes.csv` `edges.csv` Neo4j 导入｜`stats.json` 统计。\n查询 API 见 `src/app/serve_api.py`，许可证 CC BY 4.0。",
+  "license_id": "cc-by",
+  "owner_org": "personal",
+  "tags": [
+    {
+      "name": "招聘"
+    },
+    {
+      "name": "技能"
+    },
+    {
+      "name": "岗位"
+    },
+    {
+      "name": "知识图谱"
+    }
+  ],
+  "groups": [
+    {
+      "name": "commerce"
+    }
+  ],
+  "resources": [
+    {
+      "name": "样例数据（JSON-LD）",
+      "format": "JSON-LD",
+      "url": "TBD"
+    },
+    {
+      "name": "数据下载（JSON-LD）",
+      "format": "JSON-LD",
+      "url": "TBD"
+    },
+    {
+      "name": "数据Schema（TTL）",
+      "format": "TTL",
+      "url": "TBD"
+    },
+    {
+      "name": "数据Schema（JSON-LD）",
+      "format": "JSON-LD",
+      "url": "TBD"
+    },
+    {
+      "name": "JSON-LD Context",
+      "format": "JSON",
+      "url": "TBD"
+    },
+    {
+      "name": "数据访问API",
+      "format": "API",
+      "url": "TBD"
+    },
+    {
+      "name": "Neo4j 导入文件",
+      "format": "CSV",
+      "url": "TBD"
+    },
+    {
+      "name": "数据门户",
+      "format": "HTML",
+      "url": "TBD"
+    }
+  ]
+}

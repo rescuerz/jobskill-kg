@@ -1,0 +1,11 @@
+{
+  "precision": 0.0665,
+  "recall": 0.0931,
+  "f1": 0.0776,
+  "n_gold": 945,
+  "n_pred": 1323,
+  "tp": 88,
+  "train_size": 1500,
+  "test_size": 400,
+  "epochs": 2
+}

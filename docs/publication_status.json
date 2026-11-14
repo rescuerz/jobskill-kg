@@ -1,0 +1,8 @@
+{
+  "target": "https://github.com/rescuerz/JobSkill-KG",
+  "github": "ready_for_user_to_publish",
+  "openkg": "deferred_by_user",
+  "remote_created_by_agent": false,
+  "public_access_verified": false,
+  "handoff": "User will create repository and upload. Run scripts/verify_publication.py afterward."
+}

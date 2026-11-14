@@ -1,0 +1,128 @@
+@prefix cns:  <http://data.openkg.cn/dataset/jobskill-kg#> .
+@prefix sc:   <https://schema.org/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://data.openkg.cn/dataset/jobskill-kg> a owl:Ontology ;
+    rdfs:label "JobSkill-KG 中文 IT/算法岗位—技能知识图谱本体"@zh , "JobSkill-KG Ontology"@en ;
+    rdfs:comment "在 cnSchema（schema.org v13 中文版）基础上扩展的招聘领域本体：复用 JobPosting/Occupation/MonetaryAmount 等核心类，新增技能、岗位族、薪酬区间等类与属性。"@zh ;
+    owl:versionInfo "0.2.0" ;
+    dcterms:created "2026-11-01"^^xsd:date .
+
+# ---------------------------- 类 ----------------------------
+
+cns:Skill a owl:Class ;
+    rdfs:label "技能"@zh , "Skill"@en ;
+    rdfs:subClassOf sc:Thing ;
+    rdfs:comment "可从招聘文本中抽取的能力单元，按 ESCO 的 LSKT 四维区分类型：K=知识、S=技能、T=通用能力、L=语言能力。schema.org 只有 knowsAbout 属性，无法承载技能的类型、等级与必要性，故独立成类。"@zh .
+
+cns:SkillCategory a owl:Class ;
+    rdfs:label "技能分类"@zh , "Skill Category"@en ;
+    rdfs:subClassOf sc:Thing ;
+    rdfs:comment "技能的分类树节点，例如 编程语言 / 深度学习框架 / 数据库 / 云原生工具 / 证书。"@zh .
+
+cns:JobFamily a owl:Class ;
+    rdfs:label "岗位族"@zh , "Job Family"@en ;
+    rdfs:subClassOf sc:Thing ;
+    rdfs:comment "岗位的族级归类，如 算法 / 数据 / 后端 / 前端客户端 / 测试 / 运维安全 / MLOps。schema:Occupation 粒度偏粗，且不便于按族做统计。"@zh .
+
+cns:SalaryRange a owl:Class ;
+    rdfs:label "薪酬区间"@zh , "Salary Range"@en ;
+    rdfs:subClassOf sc:MonetaryAmount ;
+    rdfs:comment "招聘文本中的薪资是区间加薪数（如 15-25K·14薪），单一 sc:value 无法表达，故以区间对象建模。"@zh .
+
+cns:JobRequirement a owl:Class ;
+    rdfs:label "任职要求"@zh , "Job Requirement"@en ;
+    rdfs:subClassOf sc:Thing ;
+    rdfs:comment "把学历、经验年限、专业、证书等硬性条件组织为可复用的要求节点，便于跨岗位比较。"@zh .
+
+# ---------------------------- 属性 ----------------------------
+
+cns:requiresSkill a owl:ObjectProperty ;
+    rdfs:label "要求技能"@zh , "requires skill"@en ;
+    rdfs:domain sc:JobPosting ;
+    rdfs:range cns:Skill ;
+    rdfs:comment "岗位要求的技能。不使用 schema:skills 是因为本关系需要携带等级与必要性修饰。"@zh .
+
+cns:belongsToFamily a owl:ObjectProperty ;
+    rdfs:label "所属岗位族"@zh , "belongs to family"@en ;
+    rdfs:domain sc:JobPosting ;
+    rdfs:range cns:JobFamily .
+
+cns:hasSalaryRange a owl:ObjectProperty ;
+    rdfs:label "薪酬区间"@zh , "has salary range"@en ;
+    rdfs:domain sc:JobPosting ;
+    rdfs:range cns:SalaryRange .
+
+cns:inCategory a owl:ObjectProperty ;
+    rdfs:label "所属技能分类"@zh , "in category"@en ;
+    rdfs:domain cns:Skill ;
+    rdfs:range cns:SkillCategory .
+
+cns:skillType a owl:DatatypeProperty ;
+    rdfs:label "技能类型"@zh , "skill type"@en ;
+    rdfs:domain cns:Skill ;
+    rdfs:range xsd:string ;
+    rdfs:comment "取值 K（知识）/ S（技能）/ T（通用能力）/ L（语言能力），对齐 ESCO LSKT 四维。"@zh .
+
+cns:proficiency a owl:DatatypeProperty ;
+    rdfs:label "掌握程度"@zh , "proficiency"@en ;
+    rdfs:domain cns:JobRequirement ;
+    rdfs:range xsd:string ;
+    rdfs:comment "取值：了解 / 熟悉 / 精通；原文未提及时为 未说明。"@zh .
+
+cns:necessity a owl:DatatypeProperty ;
+    rdfs:label "必要性"@zh , "necessity"@en ;
+    rdfs:domain cns:JobRequirement ;
+    rdfs:range xsd:string ;
+    rdfs:comment "取值：必备 / 加分 / 未说明 / 冲突。"@zh .
+
+cns:escoCode a owl:DatatypeProperty ;
+    rdfs:label "ESCO 概念编号"@zh , "ESCO concept code"@en ;
+    rdfs:domain cns:Skill ;
+    rdfs:range xsd:string ;
+    rdfs:comment "与 ESCO 技能概念对齐后的编号，用于跨标准互操作（可选）。"@zh .
+
+cns:educationLevel a owl:DatatypeProperty ;
+    rdfs:label "学历要求"@zh , "education level"@en ;
+    rdfs:domain sc:JobPosting ;
+    rdfs:range xsd:string ;
+    rdfs:comment "取值：不限 / 大专 / 本科 / 硕士 / 博士。"@zh .
+
+cns:experienceYears a owl:DatatypeProperty ;
+    rdfs:label "经验要求"@zh , "experience requirement"@en ;
+    rdfs:domain sc:JobPosting ;
+    rdfs:range xsd:string ;
+    rdfs:comment "取值：不限 / 应届 / 1-3年 / 3-5年 / 5-10年 / 10年以上。"@zh .
+
+cns:monthlyMin a owl:DatatypeProperty ;
+    rdfs:label "月薪下限（千元）"@zh , "monthly min (k CNY)"@en ;
+    rdfs:domain cns:SalaryRange ;
+    rdfs:range xsd:decimal .
+
+cns:monthlyMax a owl:DatatypeProperty ;
+    rdfs:label "月薪上限（千元）"@zh , "monthly max (k CNY)"@en ;
+    rdfs:domain cns:SalaryRange ;
+    rdfs:range xsd:decimal .
+
+cns:salaryMonths a owl:DatatypeProperty ;
+    rdfs:label "年薪月数"@zh , "salary months per year"@en ;
+    rdfs:domain cns:SalaryRange ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "如 13 薪、14 薪；未注明时缺省 12。"@zh .
+
+# ---------------------------- 与 schema.org 的复用关系 ----------------------------
+
+sc:JobPosting a owl:Class ;
+    rdfs:seeAlso cns:requiresSkill , cns:belongsToFamily , cns:hasSalaryRange , cns:educationLevel , cns:experienceYears .
+
+# v0.2: modifiers belong to a job-specific requirement, not the shared skill.
+cns:hasRequirement a owl:ObjectProperty ;
+    rdfs:label "岗位技能要求"@zh ; rdfs:domain sc:JobPosting ; rdfs:range cns:JobRequirement .
+cns:forSkill a owl:ObjectProperty ;
+    rdfs:label "对应技能"@zh ; rdfs:domain cns:JobRequirement ; rdfs:range cns:Skill .
+cns:evidence a owl:DatatypeProperty ;
+    rdfs:label "抽取溯源记录（JSON）"@zh ; rdfs:domain cns:JobRequirement ; rdfs:range xsd:string .

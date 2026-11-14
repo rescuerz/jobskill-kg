@@ -1,0 +1,1276 @@
+{
+  "算法": [
+    {
+      "skill": "大语言模型",
+      "jobs": 1481,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Python",
+      "jobs": 1127,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 864,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "C++",
+      "jobs": 834,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "多模态",
+      "jobs": 658,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "机器学习",
+      "jobs": 633,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Go",
+      "jobs": 551,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "数据结构",
+      "jobs": 547,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "深度学习",
+      "jobs": 541,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "PyTorch",
+      "jobs": 470,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "模型训练",
+      "jobs": 420,
+      "type": "S",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 405,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Java",
+      "jobs": 401,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "RAG",
+      "jobs": 394,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "自然语言处理",
+      "jobs": 391,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "架构设计",
+      "jobs": 359,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 324,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 318,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "TensorFlow",
+      "jobs": 307,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 303,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "强化学习",
+      "jobs": 295,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "计算机视觉",
+      "jobs": 294,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "性能优化",
+      "jobs": 286,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "Prompt",
+      "jobs": 283,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 257,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "GPU",
+      "jobs": 255,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "SFT",
+      "jobs": 253,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "AIGC",
+      "jobs": 241,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "分布式系统",
+      "jobs": 237,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "工程化",
+      "jobs": 229,
+      "type": "S",
+      "category": "工程与架构"
+    }
+  ],
+  "后端": [
+    {
+      "skill": "Go",
+      "jobs": 480,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Python",
+      "jobs": 403,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Java",
+      "jobs": 395,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "架构设计",
+      "jobs": 360,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "C++",
+      "jobs": 335,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "分布式系统",
+      "jobs": 261,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "高并发",
+      "jobs": 256,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 248,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 237,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "数据结构",
+      "jobs": 234,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "高可用",
+      "jobs": 232,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 228,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "MySQL",
+      "jobs": 216,
+      "type": "K",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 214,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 205,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "数据库",
+      "jobs": 194,
+      "type": "S",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "Redis",
+      "jobs": 188,
+      "type": "K",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "系统设计",
+      "jobs": 186,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "服务端",
+      "jobs": 178,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "性能优化",
+      "jobs": 155,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 153,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 150,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "中间件",
+      "jobs": 140,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "操作系统",
+      "jobs": 139,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "消息队列",
+      "jobs": 129,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "大数据",
+      "jobs": 109,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "缓存",
+      "jobs": 105,
+      "type": "S",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "系统架构",
+      "jobs": 104,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "RAG",
+      "jobs": 98,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "自驱力",
+      "jobs": 96,
+      "type": "T",
+      "category": "通用能力"
+    }
+  ],
+  "前端客户端": [
+    {
+      "skill": "客户端",
+      "jobs": 296,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "C++",
+      "jobs": 282,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "性能优化",
+      "jobs": 262,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 215,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "架构设计",
+      "jobs": 209,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Android",
+      "jobs": 198,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Python",
+      "jobs": 184,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 163,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Java",
+      "jobs": 161,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "数据结构",
+      "jobs": 138,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "iOS",
+      "jobs": 138,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "React",
+      "jobs": 125,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "工程化",
+      "jobs": 118,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 117,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 105,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "JavaScript",
+      "jobs": 102,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 100,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Vue",
+      "jobs": 97,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 89,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "CSS",
+      "jobs": 86,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Lua",
+      "jobs": 85,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Kotlin",
+      "jobs": 84,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Go",
+      "jobs": 75,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Swift",
+      "jobs": 69,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 65,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "TypeScript",
+      "jobs": 65,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "设计模式",
+      "jobs": 62,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "GPU",
+      "jobs": 60,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "HTML",
+      "jobs": 60,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Node.js",
+      "jobs": 58,
+      "type": "K",
+      "category": "框架与库"
+    }
+  ],
+  "MLOps": [
+    {
+      "skill": "Python",
+      "jobs": 17,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "C++",
+      "jobs": 16,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "CUDA",
+      "jobs": 14,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 13,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "GPU",
+      "jobs": 13,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 9,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "多模态",
+      "jobs": 8,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "性能优化",
+      "jobs": 8,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "Go",
+      "jobs": 7,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Kubernetes",
+      "jobs": 7,
+      "type": "K",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "NCCL",
+      "jobs": 6,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 5,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "系统设计",
+      "jobs": 5,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "RDMA",
+      "jobs": 5,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "PyTorch",
+      "jobs": 5,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "性能调优",
+      "jobs": 5,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "vLLM",
+      "jobs": 5,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "FPGA",
+      "jobs": 4,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "架构设计",
+      "jobs": 4,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "工程化",
+      "jobs": 4,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Docker",
+      "jobs": 4,
+      "type": "K",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 4,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 4,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 3,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Java",
+      "jobs": 3,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "大数据",
+      "jobs": 3,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "TensorFlow",
+      "jobs": 3,
+      "type": "K",
+      "category": "框架与库"
+    },
+    {
+      "skill": "机器学习",
+      "jobs": 3,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "容器化",
+      "jobs": 3,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "跨团队协作",
+      "jobs": 3,
+      "type": "T",
+      "category": "通用能力"
+    }
+  ],
+  "运维安全": [
+    {
+      "skill": "Python",
+      "jobs": 198,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Go",
+      "jobs": 175,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 119,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 104,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Java",
+      "jobs": 102,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 97,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "Kubernetes",
+      "jobs": 94,
+      "type": "K",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "高可用",
+      "jobs": 83,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 78,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "C++",
+      "jobs": 77,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 75,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 72,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "SRE",
+      "jobs": 64,
+      "type": "K",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "Shell",
+      "jobs": 63,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "操作系统",
+      "jobs": 62,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 56,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "架构设计",
+      "jobs": 52,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "自驱力",
+      "jobs": 50,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "数据库",
+      "jobs": 48,
+      "type": "S",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "云计算",
+      "jobs": 46,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "英语",
+      "jobs": 46,
+      "type": "L",
+      "category": "语言能力"
+    },
+    {
+      "skill": "虚拟化",
+      "jobs": 43,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "TCP/IP",
+      "jobs": 43,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "数据安全",
+      "jobs": 41,
+      "type": "S",
+      "category": "安全与隐私"
+    },
+    {
+      "skill": "大数据",
+      "jobs": 41,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "逻辑思维",
+      "jobs": 41,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "风控",
+      "jobs": 40,
+      "type": "S",
+      "category": "安全与隐私"
+    },
+    {
+      "skill": "分布式系统",
+      "jobs": 39,
+      "type": "S",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "Docker",
+      "jobs": 38,
+      "type": "K",
+      "category": "云原生与运维"
+    },
+    {
+      "skill": "性能优化",
+      "jobs": 34,
+      "type": "S",
+      "category": "云原生与运维"
+    }
+  ],
+  "测试": [
+    {
+      "skill": "Python",
+      "jobs": 131,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "测试用例",
+      "jobs": 70,
+      "type": "S",
+      "category": "测试与质量"
+    },
+    {
+      "skill": "Java",
+      "jobs": 70,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Go",
+      "jobs": 67,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "自动化测试",
+      "jobs": 62,
+      "type": "S",
+      "category": "测试与质量"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 60,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "C++",
+      "jobs": 58,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 55,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "问题解决",
+      "jobs": 50,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 43,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "性能测试",
+      "jobs": 42,
+      "type": "S",
+      "category": "测试与质量"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 41,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "逻辑思维",
+      "jobs": 38,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 36,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 34,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "服务端",
+      "jobs": 31,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Linux",
+      "jobs": 30,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "抗压能力",
+      "jobs": 28,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "客户端",
+      "jobs": 23,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Android",
+      "jobs": 21,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "操作系统",
+      "jobs": 21,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "需求分析",
+      "jobs": 21,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Shell",
+      "jobs": 18,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "SOC",
+      "jobs": 18,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "数据库",
+      "jobs": 18,
+      "type": "S",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "iOS",
+      "jobs": 17,
+      "type": "K",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "Lua",
+      "jobs": 17,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "MySQL",
+      "jobs": 17,
+      "type": "K",
+      "category": "数据库与存储"
+    },
+    {
+      "skill": "测试覆盖率",
+      "jobs": 16,
+      "type": "S",
+      "category": "测试与质量"
+    },
+    {
+      "skill": "芯片设计",
+      "jobs": 13,
+      "type": "S",
+      "category": "工程与架构"
+    }
+  ],
+  "数据": [
+    {
+      "skill": "数据分析",
+      "jobs": 295,
+      "type": "S",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "Python",
+      "jobs": 218,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "SQL",
+      "jobs": 214,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "统计学",
+      "jobs": 137,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "指标体系",
+      "jobs": 121,
+      "type": "S",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "Hive",
+      "jobs": 114,
+      "type": "K",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "沟通能力",
+      "jobs": 101,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "团队协作",
+      "jobs": 97,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "大数据",
+      "jobs": 87,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "责任心",
+      "jobs": 84,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Spark",
+      "jobs": 74,
+      "type": "K",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "机器学习",
+      "jobs": 72,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "逻辑思维",
+      "jobs": 66,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Java",
+      "jobs": 62,
+      "type": "K",
+      "category": "编程语言"
+    },
+    {
+      "skill": "Hadoop",
+      "jobs": 61,
+      "type": "K",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "数据仓库",
+      "jobs": 59,
+      "type": "S",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "学习能力",
+      "jobs": 59,
+      "type": "T",
+      "category": "通用能力"
+    },
+    {
+      "skill": "Flink",
+      "jobs": 55,
+      "type": "K",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "因果推断",
+      "jobs": 54,
+      "type": "S",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "数据挖掘",
+      "jobs": 52,
+      "type": "S",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "数据治理",
+      "jobs": 51,
+      "type": "S",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "英语",
+      "jobs": 50,
+      "type": "L",
+      "category": "语言能力"
+    },
+    {
+      "skill": "ETL",
+      "jobs": 47,
+      "type": "S",
+      "category": "大数据与流计算"
+    },
+    {
+      "skill": "数据质量",
+      "jobs": 47,
+      "type": "S",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "大语言模型",
+      "jobs": 44,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "项目管理",
+      "jobs": 43,
+      "type": "S",
+      "category": "工程与架构"
+    },
+    {
+      "skill": "用户增长",
+      "jobs": 43,
+      "type": "S",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "数据模型",
+      "jobs": 40,
+      "type": "K",
+      "category": "数据与统计"
+    },
+    {
+      "skill": "Agent",
+      "jobs": 38,
+      "type": "K",
+      "category": "算法与模型"
+    },
+    {
+      "skill": "数据驱动",
+      "jobs": 37,
+      "type": "T",
+      "category": "数据与统计"
+    }
+  ]
+}
